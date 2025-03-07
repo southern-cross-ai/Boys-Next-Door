@@ -3,82 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matty - The AI Legend</title>
+    <title>Gameplay Loop Team 1</title>
     <style>
-        body {
-            background-color: #111;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            text-align: center;
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #1a1a1a;
+            color: #ffffff;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
         }
 
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            position: relative;
             padding: 20px;
-        }
-
-        h1 {
-            font-size: 3rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 3px;
+            border: 4px solid #ffcc00;
+            background: #222;
+            box-shadow: 0px 0px 20px rgba(255, 204, 0, 0.8);
             animation: glow 1.5s infinite alternate;
         }
 
         @keyframes glow {
-            0% { text-shadow: 0 0 10px #ff4500, 0 0 20px #ff6347; }
-            100% { text-shadow: 0 0 20px #ff4500, 0 0 40px #ff6347; }
+            from { box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5); }
+            to { box-shadow: 0px 0px 20px rgba(255, 204, 0, 0.9); }
         }
 
-        p {
-            font-size: 1.5rem;
-            max-width: 700px;
-            margin-top: 20px;
-            line-height: 1.5;
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px #ff0000;
         }
 
-        .highlight {
-            color: #ff4500;
-            font-weight: bold;
+        .glitch {
+            position: relative;
+            display: inline-block;
+            animation: glitch 0.8s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(2px, -2px); }
+            60% { transform: translate(-2px, -2px); }
+            80% { transform: translate(2px, 2px); }
+            100% { transform: translate(0); }
         }
 
         .button {
             display: inline-block;
-            margin-top: 30px;
-            padding: 12px 30px;
-            font-size: 1.2rem;
-            font-weight: bold;
+            padding: 15px 25px;
+            margin-top: 20px;
+            font-size: 16px;
             color: #fff;
-            background: linear-gradient(45deg, #ff4500, #ff6347);
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
+            background: #ff0000;
+            border: 4px solid #fff;
             text-decoration: none;
-            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            text-shadow: 2px 2px black;
+            transition: all 0.3s ease-in-out;
         }
 
         .button:hover {
+            background: #ffcc00;
+            color: black;
             transform: scale(1.1);
+        }
+
+        .pixel-border {
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            background: #111;
+            border: 4px solid #fff;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Matty: The AI Genius & Speed Demon 🏊‍♂️</h1>
-        <p>
-            Founder of <span class="highlight">Southern Cross AI</span>, AI mastermind, 
-            data scientist, and soon-to-be world record holder in the 
-            <span class="highlight">50m freestyle</span>. Whether it's breaking AI barriers 
-            or speed records, Matty does it with style.
-        </p>
-        <a href="#" class="button">Join the Journey 🚀</a>
+        <h1 class="glitch">Gameplay Loop Team 1</h1>
+        <p>Building the most epic gameplay loop for The Guild! 🎮</p>
+        <a class="button" href="https://github.com/southern-cross-ai/The_Guild_01" target="_blank">Visit GitHub</a>
     </div>
 
 </body>
