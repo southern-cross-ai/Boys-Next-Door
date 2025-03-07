@@ -8,7 +8,7 @@ Greetings, traveler of the internet! I'm **Xing Chen**, a gaming enthusiast, bas
 
 ## 🎮 Gamer by Heart, Coder by Trade
 
-![Rubick - The Grand Magus](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2hveGg5Z3RiZ3d2NHdmYWI5ZHBqMHdsa2U0cGlkYzZpYjF4dW9tZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TjvWeqwBK5SsP2NTh5/giphy.gif)
+![Rubick - The Grand Magus](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHRmanI0cHY0cXNnb2c2ZmVuMGJxMHBqbXloYW5tdTE1b2YyNHUybiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/M8QSmoO5CwNbrDqF8m/giphy.gif)
 
 When I'm not immersed in writing code, I'm usually deep in the world of video games. Whether it's the strategic chaos of **Dota 2** (Rubick main, of course) or the epic adventures of **The Witcher** and **Red Dead Redemption**, gaming fuels my creativity and problem-solving skills.
 
