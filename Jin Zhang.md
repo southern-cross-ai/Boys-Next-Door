@@ -1,4 +1,4 @@
-# Hi there, I'm Baizhen 👋
+# Hi there, I'm Jin Zhang 👋
 
 ![Cool GIF](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3lpNDJ6Nm05cmJxZTUzbHRyb2FidmYxZ2s4MGR4b254eWE4cjdvMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0IpXwyCXikRK9Yl2/giphy.gif)
 # About Me
