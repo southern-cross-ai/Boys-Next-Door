@@ -1,5 +1,7 @@
 # Hi there, I'm Baizhen 👋
+
 ![Welcome GIF](https://media.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif)
+
 I'm currently pursuing my **Master of Computing** and passionate about exploring innovative computing solutions.
 
 ---
