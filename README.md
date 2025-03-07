@@ -1,96 +1,51 @@
-# The Guild – Game Loop Team 1 🏰🎮
-
+## 🎮 Welcome to **Gameplay Loop Team 1**! 🚀  
 ![The Guild - Base Building](https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif)
 
-Welcome to the official GitHub introduction for **The Guild – Base Building Team 1**. We are a dedicated group of game developers focused on creating an immersive mobile game experience using Unreal Engine 5. Our game centers on base building, resource management, and rich interior customization—all designed to deliver stunning visuals and engaging gameplay.
+Hey there, fellow game enthusiasts! Welcome to the **Gameplay Loop Team 1** repo, where we turn caffeine, code, and chaos into an epic gaming experience. We’re on a mission to craft the ultimate **gameplay experience**—bringing together **base building, dungeon crawling, exploration, and (hopefully) some balanced combat!**  
+
+<img src="./PageAssets/pic_01.jpg" alt="Game Dev Banner" width="500">
+---
+
+## 🏆 Meet the Team  
+
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center"><img src="./PageAssets/pic_Xing.png" width="100px;"><br/><b>Xing Chen</b><br/> 🏀 The Shot Caller<br/>✨ Loves: Basketball 🏀, Video Games 🎮<br/>💡 Secret Talent: Can strategize both on the court and in the code.<br/>🎤 Catchphrase: "Just one more bug fix... okay, maybe one more..."</td>
+    <td align="center"><img src="./PageAssets/pic_Hongjun.png" width="100px;"><br/><b>Hongjun Xu</b><br/> 🎮 The Tech Wizard<br/>✨ Loves: Gaming 🎮, Cutting-Edge Tech 🧠<br/>💡 Secret Talent: Can probably automate your life with an AI script.<br/>🎤 Catchphrase: "If it compiles, it works… probably."</td>
+    <td align="center"><img src="./PageAssets/pic_Baizhen.png" width="100px;"><br/><b>Baizhen Lin</b><br/> ♟️ The Grandmaster<br/>✨ Loves: Volleyball 🏐, Go (围棋) ♟️<br/>💡 Secret Talent: Can outplay both players and NPCs at the same time.<br/>🎤 Catchphrase: "Everything is a calculated move. Even my coffee intake."</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./PageAssets/pic_Yingxuan.jpg" width="100px;"><br/><b>Yingxuan Tang</b><br/> 🎾 The Powerhouse<br/>✨ Loves: Tennis 🎾, Physics & Mechanics 🛠️<br/>💡 Secret Talent: Can serve a tennis ball faster than you can debug a loop.<br/>🎤 Catchphrase: "What do you mean gravity doesn’t work like that?"</td>
+    <td align="center"><img src="./PageAssets/pic_Jin.jpg" width="100px;"><br/><b>Jin Zhang</b><br/> 🕵️‍♂️ The Mystery Coder<br/>✨ Loves: (Coming soon...)<br/>💡 Secret Talent: May or may not be a coding ninja in disguise.<br/>🎤 Catchphrase: "I exist in the shadows… and in the codebase."</td>
+    <td align="center"><img src="./PageAssets/pic_Shuqi.jpg" width="100px;"><br/><b>Shuqi Zhuang</b><br/> 🤔 The Enigma<br/>✨ Loves: (Loading…)<br/>💡 Secret Talent: Can probably solve a Rubik’s Cube faster than your PC can boot up.<br/>🎤 Catchphrase: "I’ll let my code do the talking."</td>
+  </tr>
+  <tr>
+    <td align="center" colspan="3"><img src="./PageAssets/pic_Qi.png" width="100px;"><br/><b>Qi Ji</b><br/> 💡 The Think Tank<br/>✨ Loves: (To be discovered...)<br/>💡 Secret Talent: Can brainstorm a thousand ideas per second (but implementing them is another story).<br/>🎤 Catchphrase: "Wouldn’t it be cool if… oh wait, never mind."</td>
+  </tr>
+</table>
+</div>
 
 ---
 
-## About Our Project 🚀
+## 🎯 What Are We Working On?  
 
-**The Guild** is an ambitious mobile game project with these core objectives:
+We are designing the core **gameplay loop** for our game, which includes:  
+✅ **Base Building** – Construct, upgrade, and expand your settlement.  
+✅ **Dungeon Exploration** – Procedurally generated dungeons filled with surprises.  
+✅ **Map Discovery** – Find new areas, hidden quests, and secrets.  
+✅ **Combat System** – Engaging and (hopefully) balanced battle mechanics.  
 
-- **Engaging Base Building:** Establish, upgrade, and manage your own guild base using a grid-based system. 🏗️
-- **Resource Management:** Collect, consume, and store various resources like metal, stone, wood, and gold. 💎
-- **Interior Customization:** Design and decorate interiors with a robust system supporting furniture placement, layering, and more. 🛋️
-- **Special Building Functions:** Experience unique features from buildings like blacksmiths, research labs, and infirmaries. ⚒️
-- **User Interface Excellence:** Enjoy a smooth gameplay experience with a dedicated UI for building, resource management, and game navigation. 🎮
-
-For an in-depth look at our system architecture and module details, please refer to our [Detailed Architecture Diagram](https://drive.google.com/file/d/1lP8SqjgWLO4cjVYXvSWaWTlegKQIKgp-/view?usp=sharing).
+We’re combining our **game design expertise** with **pure passion for gaming** to make something awesome!  
 
 ---
 
-## Our Technology Stack 💻
+## 🤝 Join the Fun!  
 
-- **Game Engine:** Unreal Engine 5 (leveraging high-quality visual effects and mobile optimization) 🔥
-- **Programming Languages:** C++ and Blueprints 👨‍💻
-- **Version Control:** Git 🗃️
-- **Development Tools:** Visual Studio 2022 (or Visual Studio Code/Rider) 🛠️
-- **Asset Management:** Utilizing client-provided resources and free assets from the Unreal Marketplace 🎨
+Want to follow our journey? Feel free to:  
+⭐ **Star this repo** for updates!  
+🐛 **Report bugs** (but don’t judge us too hard, we’re trying!)  
+💬 **Give feedback** – We love constructive criticism! Contact us: u7725171@anu.edu.au
 
----
-
-## Meet Our Team 👥
-
-Our success is driven by the combined expertise of our team members:
-
-- **Xing Chen** – *Project Manager*  
-  Oversees project direction, ensuring we meet our objectives and maintain a high-quality standard.  
-  Email: [u7725171@anu.edu.au](mailto:u7725171@anu.edu.au) 📧
-
-- **Hongjun Xu** – *Lead Programmer*  
-  Leads the development of our game’s core systems, ensuring robust code and smooth performance.  
-  Email: [u7733037@anu.edu.au](mailto:u7733037@anu.edu.au) 📧
-
-- **Baizhen Lin** – *Programmer*
-  Develop high quality function in the game.   
-  Email: [u7770074@anu.edu.au](mailto:u7770074@anu.edu.au) 📧 
-  
-- **xxxxxxxxxxxxxxxxxx** – *Programmer*    
-  Oversees project direction, ensuring we meet our objectives and maintain a high-quality standard.  
-  Email: [u7xxxxx@anu.edu.au](mailto:uxxxxxxx@anu.edu.au) 📧 
-  
-- **Yingxuan Tang** – *UI/UX*  
-  Design the high quality UI in the game.    
-  Email: [u7670526@anu.edu.au](mailto:u7670526@anu.edu.au) 📧
-  
-- **Shuqi Zhuang** – *Quality Assurance*
-  Ensures a seamless, bug-free experience that gamers can trust.  
-  Email: [u7726603@anu.edu.au](mailto:u7726603@anu.edu.au) 📧
-  
-- **Jin Zhang** – *Quality Assurance*
-  Ensures a seamless, bug-free experience that gamers can trust.  
-  Email: [u7178864@anu.edu.au](mailto:u7178864@anu.edu.au) 📧
-  
-
-
-*Our team also includes talented artists, designers, and additional developers committed to refining every aspect of our game—from gameplay mechanics to UI aesthetics.*
-
----
-
-## Our Development Environment ⚙️
-
-To get started or contribute, ensure you have the following setup:
-
-- **Software:**  
-  - Unreal Engine 5.4 🎮  
-  - Visual Studio 2022 (version 17.4 or later; 17.8 recommended) 💻  
-  - Git 🗂️
-
-- **Setup Steps:**  
-  1. Install Unreal Engine 5 and Visual Studio 2022.  
-  2. Clone our project repository.  
-  3. Open the `.uproject` file and let the engine compile the necessary modules.  
-  4. Open the solution file in Visual Studio to start contributing.
-
----
-
-## Join Us on Our Journey ✨
-
-At The Guild – Base Building Team 1, we are constantly innovating—expanding our game’s features, optimizing performance, and refining the player experience. Whether you’re a contributor, a tester, or a fan, we welcome you to explore our repository, share your ideas, and join us in building a truly immersive game.
-
-> *"Great things are built by a team that believes in the power of collaboration."* 🤝
-
-For any inquiries or feedback, please reach out via our contact information above.
-
-Happy coding and game building! 🚀
+Stay tuned for **dev logs, GIFs, and inevitable feature creep!** 🚀
