@@ -1,6 +1,6 @@
 # Hi there, I'm Baizhen 👋
-
-I'm currently pursuing my **Master of Computing** at the Australian National University (ANU) and passionate about exploring innovative computing solutions.
+![Welcome GIF](https://media.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif)
+I'm currently pursuing my **Master of Computing** and passionate about exploring innovative computing solutions.
 
 ---
 
@@ -19,19 +19,15 @@ I'm currently pursuing my **Master of Computing** at the Australian National Uni
 ---
 
 ## 💬 Let's Connect
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com)
-- **GitHub:** [@YourGitHubUsername](https://github.com/YourGitHubUsername)
-- **Email:** [youremail@example.com](mailto:youremail@example.com)
+- lost connected
 
 ---
 
 ## ⚡ Fun Facts
-- I love solving puzzles and coding challenges.
+- I love solving coding challenges.
 - Avid reader of tech blogs and research papers.
 - Always on the lookout for innovative ways to blend creativity with technology.
 
 ---
 
 > "The only way to do great work is to love what you do." – Steve Jobs
-
-Feel free to explore my repositories and contribute to the journey of learning and growth!
