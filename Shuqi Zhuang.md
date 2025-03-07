@@ -2,7 +2,7 @@
 **Hi, I'm Shuqi! 🚀**  
 Master of Computing | Australian National University (ANU)
 ════════════════════════════════════════════
-
+ <img src="https://giphy.com/gifs/happy-car-home-rdma0nDFZMR32" alt="Dancing Robot" width="400"/>  
 Hello there! I'm a passionate computing enthusiast diving into the realms of **Machine Learning 🤖** and **Human-Computer Interaction 🖥️**. I thrive on building innovative tech solutions that are both intelligent and user-friendly.
 
 ---
