@@ -6,25 +6,25 @@
 We are **The Guild** – a passionate team of 7 game developers dedicated to pushing the boundaries of interactive entertainment using Unreal Engine 5. Our creative collaboration brings together diverse skills to craft immersive gaming experiences.
 
 ## Meet the Team
-- **Alice** – *Project Lead & Creative Director*  
+- **Xing Chen** – *Project Lead & Creative Director*  
   Guides our vision and ensures every game element shines.
   
-- **Bob** – *Lead Programmer*  
+- **Hongjun Xu** – *Lead Programmer*  
   Masters the code that drives gameplay and interactivity.
   
-- **Charlie** – *Level Designer*  
-  Constructs captivating worlds and environments for players to explore.
+- **xxxxxx** – *Programmer*  
+  Design basic function for the game.
   
-- **Dana** – *AI & Physics Specialist*  
-  Creates realistic game dynamics with cutting-edge AI and physics simulations.
+- **Baizhen Lin** – *Programmer*  
+  Design basic function for the game.
   
-- **Eve** – *3D Artist & Animator*  
-  Brings characters and worlds to life with stunning visual artistry.
+- **Yingxuan Tang** – *UI/UX*  
+  Design basic interface.
   
-- **Frank** – *Sound Engineer*  
-  Crafts immersive audio experiences that elevate every moment.
+- **Shuqi Zhuang** – *Quality Assurance*  
+  Ensures a seamless, bug-free experience that gamers can trust.
   
-- **Grace** – *Quality Assurance Lead*  
+- **Jin Zhang** – *Quality Assurance*  
   Ensures a seamless, bug-free experience that gamers can trust.
 
 ## Our Mission
