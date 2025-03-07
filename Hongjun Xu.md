@@ -1,4 +1,6 @@
-# Hello there 👋
+# Hello there 👋 I'm Hongjun
+
+![Frog](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWowZnM1MWZycTczdTNkaHV0Y2Z5bTgxbDFnMnQxMHJheGZsbmtqdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YvEvbKe487wIzVCV9G/giphy.gif)
 
 ![Visitors](https://img.shields.io/badge/Repos-28-blue) ![Visitors](https://img.shields.io/badge/Stars-3-blue)
 
