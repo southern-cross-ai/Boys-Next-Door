@@ -1,14 +1,41 @@
-Hi there! I'm Shuqi Zhuang👋, a passionate computing enthusiast dedicated to exploring the innovative intersection of machine learning 🤖 and human-computer interaction 🖥️.
+════════════════════════════════════════════
+**Hi, I'm Shuqi! 🚀**  
+Master of Computing | Australian National University (ANU)
+════════════════════════════════════════════
 
-Current Focus:
-• Machine Learning: Delving into advanced techniques and research to create intelligent systems 🤖.
-• Human-Computer Interaction: Investigating user-centric design to enhance the way we interact with technology 🖥️.
+Hello there! I'm a passionate computing enthusiast diving into the realms of **Machine Learning 🤖** and **Human-Computer Interaction 🖥️**. I thrive on building innovative tech solutions that are both intelligent and user-friendly.
 
-What I Do:
-• Engage in cutting-edge research and develop projects with real-world applications 🌐.
-• Actively contribute to open source initiatives to drive technological progress 💡.
+---
 
-My Goal:
-Combine theory and practice to build solutions that push technological boundaries while delivering exceptional user experiences 🌟.
+**What I'm Up To:**  
+- **Innovative Research:** Exploring advanced machine learning models and algorithms.  
+- **Interactive Design:** Crafting engaging user interfaces and dynamic systems.  
+- **Collaborative Projects:** Contributing to open-source initiatives and tech communities.
 
-Feel free to reach out if you'd like to connect or collaborate! 🚀
+---
+
+**A Few Animated Vibes to Brighten Up My Profile:**
+
+1. **Tech Groove:**  
+   <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Dancing Robot" width="150"/>  
+
+2. **Coding in Action:**  
+   <img src="https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif" alt="Coding Animation" width="150"/>  
+
+3. **Creative Spark:**  
+   <img src="https://media.giphy.com/media/5xtDarqlsEWXz2cXc1a/giphy.gif" alt="Light Bulb Spark" width="150"/>  
+
+4. **User Interaction Magic:**  
+   <img src="https://media.giphy.com/media/3oEjHGrVGrqgFFknfO/giphy.gif" alt="Interactive Experience" width="150"/>  
+
+5. **Data in Motion:**  
+   <img src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" alt="Flowing Data" width="150"/>  
+
+---
+
+**My Motto:**  
+"Code with passion, create with purpose, and connect with the world."
+
+Feel free to reach out if you'd like to collaborate or simply share ideas. Let's make technology fun and innovative together! 🚀
+
+════════════════════════════════════════════
