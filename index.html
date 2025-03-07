@@ -13,26 +13,28 @@
             box-sizing: border-box;
         }
 
-        body {
-            background: #1a1a1a;
-            color: #ffffff;
-            font-family: 'Press Start 2P', cursive;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
+        /* 设置 Three.js 画布为背景 */
+        canvas.game {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* 让 Three.js 画布在最底层 */
         }
 
+        /* 你的网页内容 */
         .container {
-            position: relative;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             padding: 20px;
             border: 4px solid #ffcc00;
-            background: #222;
+            background: rgba(34, 34, 34, 0.9); /* 半透明黑色背景 */
             box-shadow: 0px 0px 20px rgba(255, 204, 0, 0.8);
-            animation: glow 1.5s infinite alternate;
+            text-align: center;
+            z-index: 2; /* 让网页内容在前面 */
         }
 
         @keyframes glow {
@@ -50,15 +52,6 @@
             position: relative;
             display: inline-block;
             animation: glitch 0.8s infinite linear alternate-reverse;
-        }
-
-        @keyframes glitch {
-            0% { transform: translate(0); }
-            20% { transform: translate(-2px, 2px); }
-            40% { transform: translate(2px, -2px); }
-            60% { transform: translate(-2px, -2px); }
-            80% { transform: translate(2px, 2px); }
-            100% { transform: translate(0); }
         }
 
         .button {
@@ -81,22 +74,60 @@
             transform: scale(1.1);
         }
 
-        .pixel-border {
-            position: relative;
-            display: inline-block;
-            padding: 10px;
-            background: #111;
-            border: 4px solid #fff;
+        /* 控制按钮 */
+        #controls {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        #controls div {
+            display: grid;
+            grid-template-columns: 50px 50px 50px;
+            gap: 10px;
+        }
+
+        #controls button {
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            border: 1px solid lightgray;
+            box-shadow: 3px 5px 0px 0px rgba(0, 0, 0, 0.75);
+            cursor: pointer;
+            outline: none;
+        }
+
+        #controls button:first-of-type {
+            grid-column: 1/-1;
         }
     </style>
 </head>
 <body>
 
+    <!-- Three.js 背景游戏 -->
+    <canvas class="game"></canvas>
+
+    <!-- 你的网页内容 -->
     <div class="container">
         <h1 class="glitch">Gameplay Loop Team 1</h1>
         <p>Building the most epic gameplay loop for The Guild! 🎮</p>
         <a class="button" href="https://github.com/southern-cross-ai/The_Guild_01" target="_blank">Visit GitHub</a>
     </div>
 
+    <!-- 游戏控制按钮 -->
+    <div id="controls">
+        <div>
+            <button id="forward">▲</button>
+            <button id="left">◀</button>
+            <button id="backward">▼</button>
+            <button id="right">▶</button>
+        </div>
+    </div>
+
+    <script type="module" src="game.js"></script>
 </body>
 </html>
