@@ -29,7 +29,7 @@ Basketball used to be my go-to adrenaline rush, but now I channel that energy in
 
 Currently pursuing my **Master of Computing**, I'm on a quest to dive deep into game development and software engineering. My ultimate goal? To turn my passion for gaming into something players around the world can enjoy.
 
-![Coding Life]([https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif](https://media.giphy.com/media/Ws6T5PN7wHv3cY8xy8/giphy.gif?cid=790b7611gws41yruiall3vdd2ueugpfq6j31s7ppvdoevrmr&ep=v1_gifs_search&rid=giphy.gif&ct=g))
+![Coding Life](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjUzdGhrbjcxa3UzMjRpdGJ0bXEzb3h6MXhpaDJ6OGhxY204MG43NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ws6T5PN7wHv3cY8xy8/giphy.gif)
 
 ## 🎯 The Dream
 
