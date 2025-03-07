@@ -48,4 +48,8 @@ Want to follow our journey? Feel free to:
 🐛 **Report bugs** (but don’t judge us too hard, we’re trying!)  
 💬 **Give feedback** – We love constructive criticism! Contact us: u7725171@anu.edu.au
 
+<<<<<<< HEAD
 Stay tuned for **dev logs, GIFs, and inevitable feature creep!** 🚀
+=======
+Stay tuned for **dev logs, GIFs, and inevitable feature creep!** 🚀
+>>>>>>> f39a9e8a0b29d1d82b2dc44c9fdd9ec0c26dfd68
