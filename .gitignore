@@ -13,7 +13,9 @@
 # Unreal Sharp Files            #
 #################################
 /DerivedDataCache
-/Plugins
+/Plugins/UnrealSharp/Binaries
+/Plugins/UnrealSharp/Intermediate
+/Plugins/UnrealSharp/Managed
 /Script/ProjectGlue
 
 #################################
