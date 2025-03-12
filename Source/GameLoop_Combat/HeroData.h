@@ -28,6 +28,9 @@ public:
     ENPCType type;              // NPC类型（枚举）
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Basic Attributes")
+    bool isEnemy;
+    
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Basic Attributes")
     int32 rank;                 // 强度等级
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Basic Attributes")
@@ -65,8 +68,11 @@ public:
     int32 damage_range;     // 基础伤害范围
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat Attributes")
+    TArray<int32> position_preferred;
+    
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat Attributes")
     int32 position;             // 当前站位
-
+    
     // 状态属性
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Status Attributes")
     bool stunned;               // 是否被眩晕
@@ -118,12 +124,13 @@ public:
 public:
     // 默认构造函数
     FHeroData()
-        : npc_id(0), name(TEXT("Unnamed Hero")), type(ENPCType::Beast), rank(1), size(1), 
+        : npc_id(0), name(TEXT("Unnamed Hero")), type(ENPCType::Beast), isEnemy(false), rank(1), size(1), 
           hp(100), max_hp(100), stress(0), speed(5), accuracy(0.8f), dodge(0.15f), critical(0.1f), 
           protect(0.2f), damage_range(10), position(1), stunned(false), marked(false), bleed(0, 0),
           blight(0, 0), death_door(false), death_save_chance(0.0f)
     {
         // Initialize maps and arrays
+        position_preferred.Append({0, 1, 2, 3});
         resistances.Add(EBuffType::SpeedDown, 0.3);
         buffs.Add(EBuffType::PowerUp);
         skills.Add(ESkillType::StraightDamage);
@@ -131,13 +138,18 @@ public:
         // extra_actions.Add(1);
         targeting_priority = ETargetingPriority::LowestHP;
     }
-    FHeroData(FString InName, int32 InNpcId, float InSpeed)
+    FHeroData(FString InName, int32 InNpcId, float InSpeed, bool IsEnemy)
     : npc_id(InNpcId), name(InName), type(ENPCType::Beast), rank(1), size(1),
       hp(100), max_hp(100), stress(0), speed(InSpeed), accuracy(0.8f), dodge(0.15f), 
       critical(0.1f), protect(0.2f), damage_range(10), position(1), stunned(false), 
       marked(false), bleed(0, 0), blight(0, 0), death_door(false), death_save_chance(0.0f)
     {
+        name = InName;
+        npc_id = InNpcId;
+        speed = InSpeed;
+        isEnemy = IsEnemy;
         // Initialize maps and arrays
+        position_preferred.Append({0, 1, 2, 3});
         resistances.Add(EBuffType::SpeedDown, 0.3);
         buffs.Add(EBuffType::PowerUp);
         skills.Add(ESkillType::StraightDamage);

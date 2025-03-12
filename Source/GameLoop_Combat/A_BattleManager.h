@@ -44,14 +44,17 @@ public:
 	void ClearAndRefresh(float DeltaTime);
 	void EndGame(float DeltaTime);
 	
-	void SortUnitsBySpeed(TArray<FHeroData*>& HeroList);
-
+	void SortUnitsBySpeed(TArray<FHeroData>& HeroList);
+	void DeployUnitsByPreferred(TArray<FHeroData>& HeroList, bool isEnemy);
 public:
 	bool bIsBattleActive;
 	
 	UPROPERTY(EditAnywhere)
 	TArray<FHeroData> EntityDataList;
 
+	// UPROPERTY(EditAnywhere)
+	// TArray<FHeroData&> PositionMap;
+	//
 	UPROPERTY(EditAnywhere)
 	int32 iCurrentRound;
 
