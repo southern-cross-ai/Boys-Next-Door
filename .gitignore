@@ -10,6 +10,12 @@
 /Content/StarterContent
 
 #################################
+# Unreal Sharp Files            #
+#################################
+/DerivedDataCache
+/Plugins
+
+#################################
 # Visual Studio Generated Files #
 #################################
 # Cache Directory
