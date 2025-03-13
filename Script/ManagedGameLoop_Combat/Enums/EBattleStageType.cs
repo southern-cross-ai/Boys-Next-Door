@@ -1,5 +1,7 @@
-namespace ManagedGameLoop_Combat.Enums;
+using UnrealSharp.Attributes;
 
+namespace ManagedGameLoop_Combat.Enums;
+[UEnum]
 public enum EBattleStageType
 {
 	Initialization,

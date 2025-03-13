@@ -24,18 +24,6 @@ public class ABattleManager : AActor
     {
         Initialization();
     }
-    public override void Tick(float deltaSeconds)
-    {
-        switch (BattleStageType)
-        {
-            case Enums.EBattleStageType.StartRound:
-                StartRound(deltaSeconds);
-                break;
-            case Enums.EBattleStageType.PlayerAction:
-                PlayerAction(deltaSeconds);
-                break;
-        }
-    }
     private void Initialization()
     {
         PrintString("[BATTLE] Initialization start", duration: 5);
@@ -50,17 +38,63 @@ public class ABattleManager : AActor
         fCurrentStageTime = 0f;
         bHasProceedCurrentStage = false;
     }
+    
+    public override void Tick(float deltaSeconds)
+    {
+        switch (BattleStageType)
+        {
+            case Enums.EBattleStageType.StartRound:
+                StartRound(deltaSeconds);
+                break;
+            case Enums.EBattleStageType.PlayerAction:
+                PlayerAction(deltaSeconds);
+                break;
+            case Enums.EBattleStageType.BattleAction:
+                BattleAction(deltaSeconds);
+                break;
+            case Enums.EBattleStageType.UseItemAction:
+                UseItemAction(deltaSeconds);
+                break;
+            case Enums.EBattleStageType.MovePositionAction:
+                MovePositionAction(deltaSeconds);
+                break;
+            case Enums.EBattleStageType.DefenseAction:
+                DefenseAction(deltaSeconds);
+                break;
+            case Enums.EBattleStageType.ToHitCheck:
+                ToHitCheck(deltaSeconds);
+                break;
+            case Enums.EBattleStageType.CriticalCheck:
+                CriticalCheck(deltaSeconds);
+                break;
+            case Enums.EBattleStageType.DamageCalculation:
+                DamageCalculation(deltaSeconds);
+                break;
+            case Enums.EBattleStageType.StatusEffect:
+                StatusEffect(deltaSeconds);
+                break;
+            case Enums.EBattleStageType.DeathDoorCheck:
+                DeathDoorCheck(deltaSeconds);
+                break;
+            case Enums.EBattleStageType.ClearAndRefresh:
+                ClearAndRefresh(deltaSeconds);
+                break;
+            case Enums.EBattleStageType.EndGame:
+                EndGame(deltaSeconds);
+                break;
+            default:
+                break;
+        }
+    }
 
     private void StartRound(float deltaTime)
     {
         if (!bHasProceedCurrentStage)
         {
             PrintString("[BATTLE] StartRound start", duration: 5);
-            // // PrintToConsole("[BATTLE] StartRound start");
             SortUnitsBySpeed(EntityDataList);
             DeployUnitsByPreferred(EntityDataList, true);
             DeployUnitsByPreferred(EntityDataList, false);
-
             bHasProceedCurrentStage = true;
         }
 
@@ -78,7 +112,161 @@ public class ABattleManager : AActor
         if (!bHasProceedCurrentStage)
         {
             PrintString("[BATTLE] PlayerAction start", duration: 5);
-            // PrintToConsole("[BATTLE] PlayerAction start");
+            bHasProceedCurrentStage = true;
+        }
+
+        fCurrentStageTime += deltaTime;
+        if (bHasProceedCurrentStage && fWaitTime < fCurrentStageTime)
+        {
+            BattleStageType = Enums.EBattleStageType.BattleAction;
+            fCurrentStageTime = 0f;
+            bHasProceedCurrentStage = false;
+        }
+    }
+    
+    // ====================================================================
+    // ====================================================================
+    private void BattleAction(float deltaTime)
+    {
+        if (!bHasProceedCurrentStage)
+        {
+            // TODO: BattleAction start logic
+            bHasProceedCurrentStage = true;
+        }
+
+        fCurrentStageTime += deltaTime;
+        if (bHasProceedCurrentStage && fWaitTime < fCurrentStageTime)
+        {
+            BattleStageType = Enums.EBattleStageType.ToHitCheck;
+            fCurrentStageTime = 0f;
+            bHasProceedCurrentStage = false;
+        }
+    }
+
+    private void UseItemAction(float deltaTime)
+    {
+        if (!bHasProceedCurrentStage)
+        {
+            // TODO: UseItemAction start logic
+            bHasProceedCurrentStage = true;
+        }
+
+        fCurrentStageTime += deltaTime;
+        if (bHasProceedCurrentStage && fWaitTime < fCurrentStageTime)
+        {
+            BattleStageType = Enums.EBattleStageType.ToHitCheck;
+            fCurrentStageTime = 0f;
+            bHasProceedCurrentStage = false;
+        }
+    }
+
+    private void MovePositionAction(float deltaTime)
+    {
+        if (!bHasProceedCurrentStage)
+        {
+            // TODO: MovePositionAction start logic
+            bHasProceedCurrentStage = true;
+        }
+
+        fCurrentStageTime += deltaTime;
+        if (bHasProceedCurrentStage && fWaitTime < fCurrentStageTime)
+        {
+            BattleStageType = Enums.EBattleStageType.ToHitCheck;
+            fCurrentStageTime = 0f;
+            bHasProceedCurrentStage = false;
+        }
+    }
+
+    private void DefenseAction(float deltaTime)
+    {
+        if (!bHasProceedCurrentStage)
+        {
+            // TODO: DefenseAction start logic
+            bHasProceedCurrentStage = true;
+        }
+
+        fCurrentStageTime += deltaTime;
+        if (bHasProceedCurrentStage && fWaitTime < fCurrentStageTime)
+        {
+            BattleStageType = Enums.EBattleStageType.ToHitCheck;
+            fCurrentStageTime = 0f;
+            bHasProceedCurrentStage = false;
+        }
+    }
+
+    private void ToHitCheck(float deltaTime)
+    {
+        if (!bHasProceedCurrentStage)
+        {
+            // TODO: ToHitCheck start logic
+            bHasProceedCurrentStage = true;
+        }
+
+        fCurrentStageTime += deltaTime;
+        if (bHasProceedCurrentStage && fWaitTime < fCurrentStageTime)
+        {
+            BattleStageType = Enums.EBattleStageType.CriticalCheck;
+            fCurrentStageTime = 0f;
+            bHasProceedCurrentStage = false;
+        }
+    }
+
+    private void CriticalCheck(float deltaTime)
+    {
+        if (!bHasProceedCurrentStage)
+        {
+            // TODO: CriticalCheck start logic
+            bHasProceedCurrentStage = true;
+        }
+
+        fCurrentStageTime += deltaTime;
+        if (bHasProceedCurrentStage && fWaitTime < fCurrentStageTime)
+        {
+            BattleStageType = Enums.EBattleStageType.DamageCalculation;
+            fCurrentStageTime = 0f;
+            bHasProceedCurrentStage = false;
+        }
+    }
+
+    private void DamageCalculation(float deltaTime)
+    {
+        if (!bHasProceedCurrentStage)
+        {
+            // TODO: DamageCalculation start logic
+            bHasProceedCurrentStage = true;
+        }
+
+        fCurrentStageTime += deltaTime;
+        if (bHasProceedCurrentStage && fWaitTime < fCurrentStageTime)
+        {
+            BattleStageType = Enums.EBattleStageType.StatusEffect;
+            fCurrentStageTime = 0f;
+            bHasProceedCurrentStage = false;
+        }
+    }
+
+    private void StatusEffect(float deltaTime)
+    {
+        if (!bHasProceedCurrentStage)
+        {
+            // TODO: StatusEffect start logic
+            bHasProceedCurrentStage = true;
+        }
+
+        fCurrentStageTime += deltaTime;
+        if (bHasProceedCurrentStage && fWaitTime < fCurrentStageTime)
+        {
+            BattleStageType = Enums.EBattleStageType.DeathDoorCheck;
+            fCurrentStageTime = 0f;
+            bHasProceedCurrentStage = false;
+        }
+    }
+
+    private void DeathDoorCheck(float deltaTime)
+    {
+        if (!bHasProceedCurrentStage)
+        {
+            // TODO: DeathDoorCheck start logic
             bHasProceedCurrentStage = true;
         }
 
@@ -91,6 +279,41 @@ public class ABattleManager : AActor
         }
     }
 
+    private void ClearAndRefresh(float deltaTime)
+    {
+        if (!bHasProceedCurrentStage)
+        {
+            // TODO: ClearAndRefresh start logic
+            bHasProceedCurrentStage = true;
+        }
+
+        fCurrentStageTime += deltaTime;
+        if (bHasProceedCurrentStage && fWaitTime < fCurrentStageTime)
+        {
+            BattleStageType = Enums.EBattleStageType.EndGame;
+            fCurrentStageTime = 0f;
+            bHasProceedCurrentStage = false;
+        }
+    }
+
+    private void EndGame(float deltaTime)
+    {
+        if (!bHasProceedCurrentStage)
+        {
+            // TODO: EndGame start logic
+            PrintString("[BATTLE] EndGame reached", duration: 5);
+            bHasProceedCurrentStage = true;
+        }
+
+        fCurrentStageTime += deltaTime;
+        if (bHasProceedCurrentStage && fWaitTime < fCurrentStageTime)
+        {
+            // End of game logic can be handled here
+            fCurrentStageTime = 0f;
+            bHasProceedCurrentStage = false;
+        }
+    }
+    
     private void SortUnitsBySpeed(List<HeroData> heroList)
     {
         Random random = new Random();
