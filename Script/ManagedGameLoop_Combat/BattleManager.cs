@@ -130,6 +130,7 @@ public class ABattleManager : AActor
     {
         if (!bHasProceedCurrentStage)
         {
+            PrintString("[BATTLE] BattleAction start", duration: 5);
             // TODO: BattleAction start logic
             bHasProceedCurrentStage = true;
         }
@@ -147,6 +148,7 @@ public class ABattleManager : AActor
     {
         if (!bHasProceedCurrentStage)
         {
+            PrintString("[BATTLE] UseItemAction start", duration: 5);
             // TODO: UseItemAction start logic
             bHasProceedCurrentStage = true;
         }
@@ -164,6 +166,7 @@ public class ABattleManager : AActor
     {
         if (!bHasProceedCurrentStage)
         {
+            PrintString("[BATTLE] MovePositionAction start", duration: 5);
             // TODO: MovePositionAction start logic
             bHasProceedCurrentStage = true;
         }
@@ -181,6 +184,7 @@ public class ABattleManager : AActor
     {
         if (!bHasProceedCurrentStage)
         {
+            PrintString("[BATTLE] DefenseAction start", duration: 5);
             // TODO: DefenseAction start logic
             bHasProceedCurrentStage = true;
         }
@@ -198,6 +202,7 @@ public class ABattleManager : AActor
     {
         if (!bHasProceedCurrentStage)
         {
+            PrintString("[BATTLE] ToHitCheck start", duration: 5);
             // TODO: ToHitCheck start logic
             bHasProceedCurrentStage = true;
         }
@@ -215,6 +220,7 @@ public class ABattleManager : AActor
     {
         if (!bHasProceedCurrentStage)
         {
+            PrintString("[BATTLE] CriticalCheck start", duration: 5);
             // TODO: CriticalCheck start logic
             bHasProceedCurrentStage = true;
         }
@@ -232,6 +238,7 @@ public class ABattleManager : AActor
     {
         if (!bHasProceedCurrentStage)
         {
+            PrintString("[BATTLE] DamageCalculation start", duration: 5);
             // TODO: DamageCalculation start logic
             bHasProceedCurrentStage = true;
         }
@@ -249,6 +256,7 @@ public class ABattleManager : AActor
     {
         if (!bHasProceedCurrentStage)
         {
+            PrintString("[BATTLE] StatusEffect start", duration: 5);
             // TODO: StatusEffect start logic
             bHasProceedCurrentStage = true;
         }
@@ -266,6 +274,7 @@ public class ABattleManager : AActor
     {
         if (!bHasProceedCurrentStage)
         {
+            PrintString("[BATTLE] DeathDoorCheck start", duration: 5);
             // TODO: DeathDoorCheck start logic
             bHasProceedCurrentStage = true;
         }
@@ -283,6 +292,7 @@ public class ABattleManager : AActor
     {
         if (!bHasProceedCurrentStage)
         {
+            PrintString("[BATTLE] ClearAndRefresh start", duration: 5);
             // TODO: ClearAndRefresh start logic
             bHasProceedCurrentStage = true;
         }
