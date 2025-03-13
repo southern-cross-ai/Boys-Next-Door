@@ -1,12 +1,29 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "ProjectGlue/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ProjectGlue.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjectGlue.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ProjectGlue/1.0.0": {
+      "type": "project",
+      "path": "../ProjectGlue/ProjectGlue.csproj",
+      "msbuildProject": "../ProjectGlue/ProjectGlue.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "E:\\our0b\\Projects\\UnrealEngine\\The_Guild_01\\Script\\ProjectGlue\\ProjectGlue.csproj"
+      "ProjectGlue >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -75,16 +92,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'E:\\our0b\\Projects\\UnrealEngine\\The_Guild_01\\Script\\ProjectGlue\\ProjectGlue.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "E:\\our0b\\Projects\\UnrealEngine\\The_Guild_01\\Script\\ProjectGlue\\ProjectGlue.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  }
 }

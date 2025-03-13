@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v9.0": {
       "ManagedGameLoop_Combat/1.0.0": {
         "dependencies": {
+          "ProjectGlue": "1.0.0",
           "UnrealSharp": "1.0.0.0"
         },
         "runtime": {
           "ManagedGameLoop_Combat.dll": {}
+        }
+      },
+      "ProjectGlue/1.0.0": {
+        "runtime": {
+          "ProjectGlue.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "UnrealSharp/1.0.0.0": {
@@ -26,6 +35,11 @@
   },
   "libraries": {
     "ManagedGameLoop_Combat/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectGlue/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

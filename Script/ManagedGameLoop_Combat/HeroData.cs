@@ -2,14 +2,7 @@ namespace ManagedGameLoop_Combat;
 
 using System;
 using System.Collections.Generic;
-
-// 枚举类型示例（这些需要自己定义或引用现有的）
-public enum NPCType { Beast, Human, Undead }
-public enum BuffType { SpeedDown, PowerUp }
-public enum SkillType { StraightDamage }
-public enum AIBehaviorType { Attack, Defense, Cover }
-public enum TargetingPriority { LowestHP, HighestHP }
-
+using Enums;
 // 状态点结构体（相当于FIntPoint）
 public struct IntPoint
 {
@@ -29,7 +22,7 @@ public class HeroData
     // 基础属性
     public int NpcId { get; set; }                       // NPC唯一标识符
     public string Name { get; set; }                    // NPC名字
-    public NPCType Type { get; set; }                   // NPC类型（枚举）
+    public ENPCType Type { get; set; }                   // NPC类型（枚举）
     public bool IsEnemy { get; set; }                   // 是否敌方
     public int Rank { get; set; }                       // 强度等级
     public int Size { get; set; }                       // 占用站位格数
@@ -43,7 +36,7 @@ public class HeroData
     public float Dodge { get; set; }                    // 闪避率
     public float Critical { get; set; }                 // 暴击率
     public float Protect { get; set; }                  // 护甲
-    public Dictionary<BuffType, float> Resistances { get; set; } // 异常状态抗性
+    public Dictionary<EBuffType, float> Resistances { get; set; } // 异常状态抗性
     public int DamageRange { get; set; }                // 基础伤害范围
     public List<int> PositionPreferred { get; set; }    // 偏好站位
     public int Position { get; set; }                   // 当前站位
@@ -53,16 +46,16 @@ public class HeroData
     public bool Marked { get; set; }                    // 是否被标记
     public IntPoint Bleed { get; set; }                 // 流血状态（伤害、回合数）
     public IntPoint Blight { get; set; }                // 毒素状态（伤害、回合数）
-    public List<BuffType> Buffs { get; set; }           // 当前所有增益效果
+    public List<EBuffType> Buffs { get; set; }           // 当前所有增益效果
     public bool DeathDoor { get; set; }                 // 是否处于濒死状态
     public float DeathSaveChance { get; set; }          // 濒死状态下的生存几率
 
     // 行为属性
-    public List<SkillType> Skills { get; set; }         // 技能列表
-    public Dictionary<SkillType, int> SkillCooldowns { get; set; } // 技能冷却
-    public AIBehaviorType AiBehavior { get; set; }      // AI行为模式
+    public List<ESkillType> Skills { get; set; }         // 技能列表
+    public Dictionary<ESkillType, int> SkillCooldowns { get; set; } // 技能冷却
+    public EAIBehaviorType AiBehavior { get; set; }      // AI行为模式
     public List<int> ExtraActions { get; set; }         // 当前回合额外行动次数
-    public TargetingPriority TargetingPriority { get; set; } // 攻击目标优先级
+    public ETargetingPriority TargetingPriority { get; set; } // 攻击目标优先级
 
     // 动态参数
     public int DynamicSpeed { get; set; }               // 动态速度
@@ -74,7 +67,7 @@ public class HeroData
     {
         NpcId = 0;
         Name = "Unnamed Hero";
-        Type = NPCType.Beast;
+        Type = ENPCType.Beast;
         IsEnemy = false;
         Rank = 1;
         Size = 1;
@@ -98,13 +91,13 @@ public class HeroData
         DeathSaveChance = 0.0f;
 
         PositionPreferred = new List<int> { 0, 1, 2, 3 };
-        Resistances = new Dictionary<BuffType, float> { { BuffType.SpeedDown, 0.3f } };
-        Buffs = new List<BuffType> { BuffType.PowerUp };
-        Skills = new List<SkillType> { SkillType.StraightDamage };
-        SkillCooldowns = new Dictionary<SkillType, int>();
-        AiBehavior = AIBehaviorType.Attack;
+        Resistances = new Dictionary<EBuffType, float> { { EBuffType.SpeedDown, 0.3f } };
+        Buffs = new List<EBuffType> { EBuffType.PowerUp };
+        Skills = new List<ESkillType> { ESkillType.StraightDamage };
+        SkillCooldowns = new Dictionary<ESkillType, int>();
+        AiBehavior = EAIBehaviorType.Attack;
         ExtraActions = new List<int>();
-        TargetingPriority = TargetingPriority.LowestHP;
+        TargetingPriority = ETargetingPriority.LowestHP;
     }
 
     // 带参数构造函数
@@ -112,7 +105,7 @@ public class HeroData
     {
         NpcId = npcId;
         Name = name;
-        Type = NPCType.Beast;
+        Type = ENPCType.Beast;
         Rank = 1;
         Size = 1;
 
@@ -135,12 +128,12 @@ public class HeroData
         DeathSaveChance = 0.0f;
 
         PositionPreferred = new List<int> { 0, 1, 2, 3 };
-        Resistances = new Dictionary<BuffType, float> { { BuffType.SpeedDown, 0.3f } };
-        Buffs = new List<BuffType> { BuffType.PowerUp };
-        Skills = new List<SkillType> { SkillType.StraightDamage };
-        SkillCooldowns = new Dictionary<SkillType, int>();
-        AiBehavior = AIBehaviorType.Attack;
+        Resistances = new Dictionary<EBuffType, float> { { EBuffType.SpeedDown, 0.3f } };
+        Buffs = new List<EBuffType> { EBuffType.PowerUp };
+        Skills = new List<ESkillType> { ESkillType.StraightDamage };
+        SkillCooldowns = new Dictionary<ESkillType, int>();
+        AiBehavior = EAIBehaviorType.Attack;
         ExtraActions = new List<int>();
-        TargetingPriority = TargetingPriority.LowestHP;
+        TargetingPriority = ETargetingPriority.LowestHP;
     }
 }

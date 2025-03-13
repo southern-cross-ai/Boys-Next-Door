@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "luDGB4WnA54=",
-  "success": false,
+  "dgSpecHash": "mnBMkqMZBPM=",
+  "success": true,
   "projectFilePath": "E:\\our0b\\Projects\\UnrealEngine\\The_Guild_01\\Script\\ManagedGameLoop_Combat\\ManagedGameLoop_Combat.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'E:\\our0b\\Projects\\UnrealEngine\\The_Guild_01\\Script\\ProjectGlue\\ProjectGlue.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "E:\\our0b\\Projects\\UnrealEngine\\The_Guild_01\\Script\\ProjectGlue\\ProjectGlue.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  "logs": []
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ManagedGameLoop_Combat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61a56eb409065db52e97c41cc0b3cb31b4a4a002")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e161b252f46e7e72bc4a35da1c30bdf4a4dfe82")]
 [assembly: System.Reflection.AssemblyProductAttribute("ManagedGameLoop_Combat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ManagedGameLoop_Combat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

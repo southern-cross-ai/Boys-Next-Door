@@ -38,3 +38,5 @@ E:\our0b\Projects\UnrealEngine\The_Guild_01\Script\ManagedGameLoop_Combat\obj\De
 E:\our0b\Projects\UnrealEngine\The_Guild_01\Script\ManagedGameLoop_Combat\obj\Debug\net9.0\ManagedGameLoop_Combat.pdb
 E:\our0b\Projects\UnrealEngine\The_Guild_01\Script\ManagedGameLoop_Combat\obj\Debug\net9.0\ManagedGameLoop_Combat.genruntimeconfig.cache
 E:\our0b\Projects\UnrealEngine\The_Guild_01\Script\ManagedGameLoop_Combat\obj\Debug\net9.0\ref\ManagedGameLoop_Combat.dll
+E:\our0b\Projects\UnrealEngine\The_Guild_01\Script\ManagedGameLoop_Combat\bin\Debug\net9.0\ProjectGlue.dll
+E:\our0b\Projects\UnrealEngine\The_Guild_01\Script\ManagedGameLoop_Combat\bin\Debug\net9.0\ProjectGlue.pdb
