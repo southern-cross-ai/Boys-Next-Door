@@ -17,12 +17,12 @@ public class ABattleManager : AActor
 
     public ABattleManager()
     {
-        Initialization();
+        
     }
 
     protected override void BeginPlay()
     {
-        
+        Initialization();
     }
     public override void Tick(float deltaSeconds)
     {
