@@ -91,9 +91,9 @@ Saved/
 
 # Ignore build-related files
 *.target
-*.csproj
-*.csproj.user
-*.sln
+# *.csproj
+# *.csproj.user
+# *.sln
 *.suo
 *.xcodeproj
 *.xcworkspace
