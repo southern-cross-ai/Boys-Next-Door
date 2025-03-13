@@ -18,6 +18,9 @@
 /Plugins/UnrealSharp/Managed
 /Script/ProjectGlue
 
+/Script/*/obj/
+/Script/*/bin/
+
 #################################
 # Visual Studio Generated Files #
 #################################
