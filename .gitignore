@@ -29,6 +29,7 @@
 *.sln
 # VSCode Cache Directory
 .vscode
+.vsconfig
 # VSCode History Files
 **/.history
 
