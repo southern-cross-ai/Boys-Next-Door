@@ -8,6 +8,10 @@
 /Intermediate
 /Saved
 /Content/StarterContent
+#################################
+# Unreal Engine Editor Preference Setting Files #
+#################################
+/config/DefaultEditorPerProjectUserSettings
 
 #################################
 # Visual Studio Generated Files #
