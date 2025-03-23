@@ -1,0 +1,125 @@
+#################################
+# Unreal Engine Generated Files #
+#################################
+/[Bb]uild
+/[Bb]uilds
+/Binaries
+/DerivedDataCache
+/Intermediate
+/Saved
+/Content/StarterContent
+#################################
+# Unreal Engine Editor Preference Setting Files #
+#################################
+/config/DefaultEditorPerProjectUserSettings
+
+#################################
+# Visual Studio Generated Files #
+#################################
+# Cache Directory
+.vs
+# User Specific Files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+# CPP Cache Files
+*.VC.db
+*.opendb
+*.opensdf
+*.sdf
+# Solution Files
+*.sln
+# VSCode Cache Directory
+.vscode
+.vsconfig
+# VSCode History Files
+**/.history
+
+
+
+#################################
+# Rider project files
+#################################
+.idea/
+*.sln.iml
+
+# Rider's workspace and task configuration
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/dictionaries
+.idea/libraries
+
+# Gradle caches
+.gradle/
+build/
+
+# User-specific files
+.idea/.name
+.idea/misc.xml
+.idea/modules.xml
+.idea/runConfigurations.xml
+.idea/compiler.xml
+.idea/assetWizard.xml
+
+#################################
+# UE5 files
+#################################
+
+# Ignore intermediate build files
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vscode/
+.vs/
+
+# Ignore Unreal generated config and log files
+*.log
+*.log.*
+*.tpsetup
+*.tpsettings
+
+# Ignore build-related files
+*.target
+*.csproj
+*.csproj.user
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+*.pro.user
+*.pro.user.*
+*.zip
+*.exe
+*.dll
+*.pdb
+*.exp
+*.app
+*.dSYM
+*.DS_Store
+*.opensdf
+*.sdf
+*.ipch
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+.vscode
+.vs
+Build/
+
+# Ignore Mac-specific files
+.DS_Store
+
+# Ignore Linux-specific files
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+*.qmake.cache
+
+#################################
+# Miscellaneous Generated Files #
+#################################
+# ADD AS NEED BE
