@@ -46,14 +46,17 @@ Based on the analysis above, we've distributed tasks among our team members and 
 
 1. **Basic Position System**
    - Successfully implemented unit deployment in the 8-position formation
+   
    ![Position System Deployment](https://i.imgur.com/DkHugYl.gif)
 
 2. **Position Swapping Logic**
    - Units within the same team can now exchange positions
+   
    ![Position Swapping](https://i.imgur.com/yeRKmZG.gif)
 
 3. **Range-Limited Actions**
    - Units now have limited reach and cannot target units outside their attack range
+   
    ![Range Limitation](https://i.imgur.com/QklBJEW.gif)
 
 4. **Stress Value Attribute**
@@ -65,9 +68,11 @@ Based on the analysis above, we've distributed tasks among our team members and 
 6. **New Skills**
    - Developed 5 entirely new skills for combat units, below are two examples
    - Shield Bash: deal damage and push enemy back 1-2 position
+   
    ![Shield Bash](https://i.imgur.com/68C3XaF.gif)
 
    - Scorching Strike: deal damage and apply burning debuff
+   
    ![Scorching Strike](https://i.imgur.com/CwDq43r.gif)
 
 ### Pending Implementations (Current Sprint)
