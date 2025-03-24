@@ -46,29 +46,15 @@ Based on the analysis above, we've distributed tasks among our team members and 
 
 1. **Basic Position System**
    - Successfully implemented unit deployment in the 8-position formation
-   <p align="center">
-     <img src="https://i.imgur.com/Nn6jxI8.gif" alt="Position System Deployment" width="500">
-   </p>
-   
-   <p align="center"><em>Position System Deployment</em></p>
-
-
+   ![Position System Deployment](https://i.imgur.com/Nn6jxI8.gif)
 
 2. **Position Swapping Logic**
    - Units within the same team can now exchange positions
-   <p align="center">
-  <img src="https://i.imgur.com/G1AwbmZ.gif" alt="Position Swapping" width="500">
-   </p>
-   
-   <p align="center"><em>Position Swapping</em></p>
+   ![Position Swapping](https://i.imgur.com/G1AwbmZ.gif)
 
 3. **Range-Limited Actions**
    - Units now have limited reach and cannot target units outside their attack range
-   <p align="center">
-  <img src="https://i.imgur.com/JMweX4h.gif" alt="Range Limitation" width="500">
-   </p>
-   
-   <p align="center"><em>Range Limitation</em></p>
+   ![Range Limitation](https://i.imgur.com/JMweX4h.gif)
 
 4. **Stress Value Attribute**
    - Added stress as a core character attribute with external interfaces for modification
@@ -76,21 +62,13 @@ Based on the analysis above, we've distributed tasks among our team members and 
 5. **Random Fluctuation Calculation Interface**
    - Implemented the backend framework for randomized attribute calculations
 
-
 6. **New Skills**
    - Developed 5 entirely new skills for combat units, below are two examples
    - Shield Bash: deal damage and push enemy back 1-2 position
-   <p align="center">
-  <img src="https://i.imgur.com/3s3PmnD.gif" alt="Shield Bash" width="500">
-   </p>
-   
-   <p align="center"><em>Shield Bash</em></p>
+   ![Shield Bash](https://i.imgur.com/3s3PmnD.gif)
+
    - Scorching Strike: deal damage and apply burning debuff
-   <p align="center">
-  <img src="https://i.imgur.com/eZ9RNHy.gif" alt="Scorching Strike" width="500">
-   </p>
-   
-   <p align="center"><em>Scorching Strike</em></p>
+   ![Scorching Strike](https://i.imgur.com/eZ9RNHy.gif)
 
 ### Pending Implementations (Current Sprint)
 
