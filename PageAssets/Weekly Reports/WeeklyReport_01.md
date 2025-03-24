@@ -46,25 +46,29 @@ Based on the analysis above, we've distributed tasks among our team members and 
 
 1. **Basic Position System**
    - Successfully implemented unit deployment in the 8-position formation
-   <figure>
-  <img src="https://i.imgur.com/Nn6jxI8.gif" alt="Position System Deployment">
-  <figcaption style="text-align: center;">Position System Deployment</figcaption>
-   </figure>
+   <p align="center">
+     <img src="https://i.imgur.com/Nn6jxI8.gif" alt="Position System Deployment" width="500">
+   </p>
+   
+   <p align="center"><em>Position System Deployment</em></p>
+
 
 
 2. **Position Swapping Logic**
    - Units within the same team can now exchange positions
-   <figure>
-  <img src="https://i.imgur.com/G1AwbmZ.gif" alt="Position System Deployment">
-  <figcaption style="text-align: center;">Position Swapping</figcaption>
-   </figure>
+   <p align="center">
+  <img src="https://i.imgur.com/G1AwbmZ.gif" alt="Position Swapping" width="500">
+   </p>
+   
+   <p align="center"><em>Position Swapping</em></p>
 
 3. **Range-Limited Actions**
    - Units now have limited reach and cannot target units outside their attack range
-   <figure>
-  <img src="https://i.imgur.com/JMweX4h.gif" alt="Range Limitation">
-  <figcaption style="text-align: center;">Range Limitation</figcaption>
-   </figure>
+   <p align="center">
+  <img src="https://i.imgur.com/JMweX4h.gif" alt="Range Limitation" width="500">
+   </p>
+   
+   <p align="center"><em>Range Limitation</em></p>
 
 4. **Stress Value Attribute**
    - Added stress as a core character attribute with external interfaces for modification
@@ -74,17 +78,19 @@ Based on the analysis above, we've distributed tasks among our team members and 
 
 
 6. **New Skills**
-   - Developed 5 entirely new skills for combat units
+   - Developed 5 entirely new skills for combat units, below are two examples
    - Shield Bash: deal damage and push enemy back 1-2 position
-   <figure>
-  <img src="https://i.imgur.com/3s3PmnD.gif" alt="Range Limitation">
-  <figcaption style="text-align: center;">Shield Bash</figcaption>
-   </figure>
+   <p align="center">
+  <img src="https://i.imgur.com/3s3PmnD.gif" alt="Shield Bash" width="500">
+   </p>
+   
+   <p align="center"><em>Shield Bash</em></p>
    - Scorching Strike: deal damage and apply burning debuff
-   <figure>
-  <img src="https://i.imgur.com/eZ9RNHy.gif" alt="Range Limitation">
-  <figcaption style="text-align: center;">Scorching Strike</figcaption>
-   </figure>
+   <p align="center">
+  <img src="https://i.imgur.com/eZ9RNHy.gif" alt="Scorching Strike" width="500">
+   </p>
+   
+   <p align="center"><em>Scorching Strike</em></p>
 
 ### Pending Implementations (Current Sprint)
 
