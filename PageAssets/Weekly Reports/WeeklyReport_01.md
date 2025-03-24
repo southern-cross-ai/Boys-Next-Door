@@ -42,6 +42,17 @@ We believe that implementing these features will bring our combat system to a ma
 
 Based on the analysis above, we've distributed tasks among our team members and made significant progress in the first week.
 
+| **Feature**                         | **Description**                                                                                           | **Assigned To**                         |
+|------------------------------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------|
+| Positioning System                 | Units have fixed slots for deployment, can swap positions, and skill effects depend on position.         | Xu Hongjun, Lin Baizhen                 |
+| Stress System                      | Allied characters have a "stress value" affecting their actions when it drops below a threshold.         | Ji Qi                                   |
+| Random Probability Fluctuation     | Critical rate, hit rate, dodge rate, and speed will have a range of fluctuations for randomness.         | Ji Qi                                   |
+| Near-Death State                   | Characters enter a near-death state at 0 HP, with probability-based checks for survival upon damage.     | Tang Yingxuan                           |
+| Character Expansion & Animation    | Adapting character models, animations, and skills to fit their design.                                   | Zhang Jin                               |
+| Skill Expansion                    | Designing additional skills with various effects for heroes.                                              | Xing Chen                            |
+| Buff & Debuff Expansion            | Designing various buffs and debuffs such as poison, bleeding, blindness, fear, etc.                      | Shuqi Zhuang                               |
+
+
 ### Completed Implementations
 
 1. **Basic Position System**
