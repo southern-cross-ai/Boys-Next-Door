@@ -62,7 +62,7 @@ We've constructed a basic battle arena with lighting and environmental elements 
 
 We've replaced the placeholder models with proper character assets, implemented appropriate animations, and added character-specific sound effects. This significant upgrade allows players to clearly identify different units and understand their actions.
 
-![Character Models & Animations](https://i.imgur.com/ilKruJf.gif)
+![Character Models & Animations](https://i.imgur.com/CO45Q7g.gif)
 
 ### Audio Enhancements
 
@@ -72,7 +72,7 @@ We've implemented background music that enhances the dungeon atmosphere while no
 
 We've created command-line shortcuts for frequently tested functions, significantly reducing development time and allowing for rapid iteration.
 
-![Command Line Testing Tools](https://i.imgur.com/YzCiBGW.gif)
+![Command Line Testing Tools](https://i.imgur.com/CYfYWcP.gif)
 
 ### GameInstance Team Loading
 
