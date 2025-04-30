@@ -1,105 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gameplay Loop Team 1</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2k2cXFkeHEwY3Uxc2h2cm5kcHp6bXd4eWoydWdhOW11cHJ0MmRxMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tBwXwUufSNkCKJxBm5/giphy.gif') no-repeat center center fixed;
-            background-size: cover;
-            color: #ffffff;
-            font-family: 'Press Start 2P', cursive;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .container {
-            position: relative;
-            padding: 20px;
-            border: 4px solid #ffcc00;
-            background: #222;
-            box-shadow: 0px 0px 20px rgba(255, 204, 0, 0.8);
-            animation: glow 1.5s infinite alternate;
-        }
-
-        @keyframes glow {
-            from { box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5); }
-            to { box-shadow: 0px 0px 20px rgba(255, 204, 0, 0.9); }
-        }
-
-        h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            text-shadow: 3px 3px #ff0000;
-        }
-
-        .glitch {
-            position: relative;
-            display: inline-block;
-            animation: glitch 0.8s infinite linear alternate-reverse;
-        }
-
-        @keyframes glitch {
-            0% { transform: translate(0); }
-            20% { transform: translate(-2px, 2px); }
-            40% { transform: translate(2px, -2px); }
-            60% { transform: translate(-2px, -2px); }
-            80% { transform: translate(2px, 2px); }
-            100% { transform: translate(0); }
-        }
-
-        .button {
-            display: inline-block;
-            padding: 15px 25px;
-            margin-top: 20px;
-            font-size: 16px;
-            color: #fff;
-            background: #ff0000;
-            border: 4px solid #fff;
-            text-decoration: none;
-            cursor: pointer;
-            text-shadow: 2px 2px black;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .button:hover {
-            background: #ffcc00;
-            color: black;
-            transform: scale(1.1);
-        }
-
-        .pixel-border {
-            position: relative;
-            display: inline-block;
-            padding: 10px;
-            background: #111;
-            border: 4px solid #fff;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gameplay Loop Team 1</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2k2cXFkeHEwY3Uxc2h2cm5kcHp6bXd4eWoydWdhOW11cHJ0MmRxMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tBwXwUufSNkCKJxBm5/giphy.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      font-family: 'Press Start 2P', cursive;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      min-height: 100vh;
+    }
+    .container {
+      background: #222;
+      padding: 20px;
+      border: 4px solid #ffcc00;
+      box-shadow: 0px 0px 20px rgba(255, 204, 0, 0.8);
+      animation: glow 1.5s infinite alternate;
+      margin-bottom: 30px;
+      width: 90%;
+      max-width: 900px;
+    }
+    @keyframes glow {
+      from { box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5); }
+      to { box-shadow: 0px 0px 20px rgba(255, 204, 0, 0.9); }
+    }
+    h1, h2, h3, h4 {
+      font-size: 16px;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px #ff0000;
+    }
+    .glitch {
+      animation: glitch 0.8s infinite linear alternate-reverse;
+    }
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(2px, -2px); }
+      60% { transform: translate(-2px, -2px); }
+      80% { transform: translate(2px, 2px); }
+      100% { transform: translate(0); }
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      margin: 10px;
+      font-size: 14px;
+      color: #fff;
+      background: #ff0000;
+      border: 4px solid #fff;
+      text-decoration: none;
+      cursor: pointer;
+      text-shadow: 2px 2px black;
+      transition: all 0.3s ease-in-out;
+    }
+    .button:hover {
+      background: #ffcc00;
+      color: black;
+      transform: scale(1.1);
+    }
+    .file-list {
+      text-align: left;
+      background: #111;
+      border: 4px solid #fff;
+      padding: 15px;
+      max-height: 500px;
+      overflow-y: auto;
+      font-size: 12px;
+    }
+    .file-list a {
+      color: #00ffff;
+      display: block;
+      margin: 5px 0;
+      text-decoration: none;
+    }
+    .file-list a:hover {
+      text-decoration: underline;
+    }
+    .folder {
+      margin-top: 10px;
+      color: gold;
+    }
+    .indent {
+      margin-left: 20px;
+    }
+    .sprint-block {
+      background: #111;
+      padding: 20px;
+      margin: 20px 0;
+      border: 2px dashed #ffcc00;
+      text-align: left;
+    }
+    .sprint-block img {
+      width: 100%;
+      margin-top: 10px;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    .team-member img {
+      width: 100px;
+      border-radius: 50%;
+    }
+    .team-member p {
+      font-size: 10px;
+      line-height: 1.4em;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1 class="glitch">Gameplay Loop Team 1</h1>
-        <p>Building the most epic gameplay loop for The Guild! 🎮</p>
-        <a class="button" href="http://southerncross.ai/Boys-Next-Door/" target="_blank">Visit GitHub</a>
-        <a class="button" href="https://trello.com/b/1onf0L18" target="_blank">Trello Board</a>
-        <a class="button" href="https://discord.gg/78dh2JnTWq" target="_blank">Join Discord</a>
+  <div class="container">
+    <h1 class="glitch">🎮 Gameplay Loop Team 1</h1>
+    <p>Building the most epic gameplay loop for The Guild!</p>
+    <a class="button" href="http://southerncross.ai/Boys-Next-Door/" target="_blank">Visit GitHub</a>
+    <a class="button" href="https://trello.com/b/1onf0L18" target="_blank">Trello Board</a>
+    <a class="button" href="https://discord.gg/78dh2JnTWq" target="_blank">Join Discord</a>
+  </div>
+
+  <div class="container">
+    <h3>🎬 Showcase Video</h3>
+    <p>Check out our latest gameplay or feature preview:</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
+  </div>
+
+ <div class="container" style="background: #111; border: 3px dashed #fff; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+    <h3>🌟 Feature Highlights</h3>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+      <div style="flex: 1 1 250px; background: #222; padding: 15px; border: 2px solid #ffcc00; transition: 0.3s;" onmouseover="this.style.background='#333'" onmouseout="this.style.background='#222'">
+        <h4 style="color: #ffcc00;">🧱 Base Building</h4>
+        <p style="font-size: 11px;">Construct and expand your stronghold. Manage resources and upgrades for long-term survival.</p>
+      </div>
+      <div style="flex: 1 1 250px; background: #222; padding: 15px; border: 2px solid #ffcc00; transition: 0.3s;" onmouseover="this.style.background='#333'" onmouseout="this.style.background='#222'">
+        <h4 style="color: #ffcc00;">🕳 Dungeon Combat</h4>
+        <p style="font-size: 11px;">Turn-based battles with position, stress, skills and status mechanics inspired by Darkest Dungeon.</p>
+      </div>
+      <div style="flex: 1 1 250px; background: #222; padding: 15px; border: 2px solid #ffcc00; transition: 0.3s;" onmouseover="this.style.background='#333'" onmouseout="this.style.background='#222'">
+        <h4 style="color: #ffcc00;">🗺 Exploration</h4>
+        <p style="font-size: 11px;">Travel through fog-of-war maps, uncover secrets, and handle random events with lasting consequences.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>📖 Devlog Highlights</h2>
+
+    <div class="sprint-block">
+      <h3>🚀 Phase 1: Combat System Kickoff</h3>
+      <ul>
+        <li>🎮 Formation system and swapping logic done</li>
+        <li>💢 Stress values live, tied to character state</li>
+        <li>🧠 Randomness system structured</li>
+        <li>🛡 Added 5+ new skills</li>
+      </ul>
+      <img src="https://i.imgur.com/DkHugYl.gif" alt="Deployment">
+      <img src="https://i.imgur.com/68C3XaF.gif" alt="Shield Bash">
+    </div>
+
+    <div class="sprint-block">
+      <h3>🧪 Phase 2: Core Feature Completion</h3>
+      <ul>
+        <li>🔥 Buffs/Debuffs implemented (Stun, Burn, Armor Break)</li>
+        <li>⚰️ Near-death logic with probability visuals</li>
+        <li>🎭 Integrated VFX, animations, audio</li>
+        <li>🏰 Dungeon-style arena environment done</li>
+      </ul>
+      <!-- <img src="https://i.imgur.com/sUjmDzr.gif" alt="Near Death"> -->
+      <img src="https://i.imgur.com/CO45Q7g.gif" alt="Characters">
+    </div>
+
+    <div class="sprint-block">
+      <h3>🔧 Phase 3: Refinement & Migration</h3>
+      <ul>
+        <li>🎥 Camera polish during actions</li>
+        <li>📦 Asset migration to new repo with GameInstance fixes</li>
+        <li>🕺 Animation refinement (idle, combat)</li>
+        <li>🌆 Multiple new battle environments</li>
+        <li>💻 Landing page rework and UI polish</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <h2>📁 Project Files (Auto Synced from Google Drive)</h2>
+    <div id="file-list" class="file-list">Loading folders...</div>
+  </div>
+
+  <div class="container" style="background: #111; border: 3px dashed #fff; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+ 
+    <h3>👥 Team Responsibilities & Members</h3>
+    <div class="team-grid">
+      <div class="team-member"><img src="./PageAssets/Xing.jpg" alt="Xing Chen"><p><strong>Xing Chen</strong><br>PM, Skills, Animation</p></div>
+      <div class="team-member"><img src="./PageAssets/Hongjun.jpg" alt="Hongjun Xu"><p><strong>Hongjun Xu</strong><br>MP, Positioning, Migration</p></div>
+      <div class="team-member"><img src="./PageAssets/Baizhen.jpg" alt="Baizhen Lin"><p><strong>Baizhen Lin</strong><br>Positioning, Migration</p></div>
+      <div class="team-member"><img src="./PageAssets/Yingxuan.jpg" alt="Yingxuan Tang"><p><strong>Yingxuan Tang</strong><br>Near-Death, UI</p></div>
+      <div class="team-member"><img src="./PageAssets/Jin.jpg" alt="Jin Zhang"><p><strong>Jin Zhang</strong><br>Animation, Scene Design</p></div>
+      <div class="team-member"><img src="./PageAssets/Shuqi.jpg" alt="Shuqi Zhuang"><p><strong>Shuqi Zhuang</strong><br>Buffs & Debuffs, Landing Page</p></div>
+      <div class="team-member"><img src="./PageAssets/Qi.png" alt="Qi Ji"><p><strong>Qi Ji</strong><br>Stress System, Camera, Randomness</p></div>
+    </div>
+  </div>
+
+  <script>
+    const API_KEY = 'AIzaSyD7vbWwqWUHoC76QtPDL94lvQT7rfwUpoo';
+    const ROOT_FOLDER_ID = '1G-UsgYSPsNI-gIZ9mxaQzuY3egO9YT7f';
+
+    async function listFiles(folderId, container) {
+      const res = await fetch(
+        `https://www.googleapis.com/drive/v3/files?q='${folderId}'+in+parents+and+trashed=false&key=${API_KEY}&fields=files(id,name,mimeType,webViewLink)`
+      );
+      const data = await res.json();
+      if (!data.files || data.files.length === 0) {
+        container.innerHTML += '<div class="indent" style="color: gray;">(Empty)</div>';
+        return;
+      }
+
+      for (const file of data.files) {
+        if (file.mimeType === 'application/vnd.google-apps.folder') {
+          const folderDiv = document.createElement('div');
+          folderDiv.className = 'folder';
+          folderDiv.innerHTML = `📁 ${file.name}`;
+          const childContainer = document.createElement('div');
+          childContainer.className = 'indent';
+
+          container.appendChild(folderDiv);
+          container.appendChild(childContainer);
+          await listFiles(file.id, childContainer);
+        } else {
+          const fileLink = document.createElement('a');
+          fileLink.href = file.webViewLink;
+          fileLink.textContent = '📄 ' + file.name;
+          fileLink.target = '_blank';
+          fileLink.className = 'indent';
+          container.appendChild(fileLink);
+        }
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const list = document.getElementById('file-list');
+      list.innerHTML = '';
+      listFiles(ROOT_FOLDER_ID, list);
+    });
+  </script>
 
 </body>
 </html>
