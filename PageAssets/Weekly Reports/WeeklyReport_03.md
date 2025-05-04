@@ -14,7 +14,7 @@ We successfully merged the combat system with the existing gameplay loop, markin
 - Fixed various errors and conflicts that emerged during the integration process
 - The game now supports a complete flow: players can depart from their base, enter dungeon exploration, and naturally transition to combat when encountering enemies
 
-![Transition from dungeon exploration to combat](https://i.imgur.com/IqyXNzk.mp4)
+![Transition from dungeon exploration to combat](https://i.imgur.com/yhYjA0S.gif)
 
 This integration has transformed the game into a truly cohesive experience, with natural and fluid transitions between modules.
 
