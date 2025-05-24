@@ -117,34 +117,112 @@
       font-size: 10px;
       line-height: 1.4em;
     }
+    
+    /* ── Fixed Top Header ── */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: rgba(17,17,17,0.9);
+      border-bottom: 4px solid transparent;
+      border-image: linear-gradient(to right, #ffcc00, #ff0000) 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 1000;
+    }
+    .header .logo {
+      font-size: 1.2rem;
+      white-space: nowrap;
+      text-shadow: 2px 2px #ff0000;
+    }
+    .nav-links {
+      display: flex;
+      gap: 12px;
+    }
+    .nav-links a {
+      display: inline-block;
+      padding: 10px 16px;
+      background: #ff0000;
+      border: 3px solid #fff;
+      color: #fff;
+      font-size: 0.8rem;
+      text-decoration: none;
+    }
+    .nav-links a:hover {
+      background: #ffcc00;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    /* ── Container Blocks ── */
+    .container {
+      background: #222;
+      padding: 20px;
+      border: 4px solid #ffcc00;
+      box-shadow: 0 0 20px rgba(255,204,0,0.8);
+      animation: glow 1.5s infinite alternate;
+      margin-bottom: 30px;
+      width: 90%;
+      max-width: 900px;
+    }
+    @keyframes glow {
+      from { box-shadow: 0 0 10px rgba(255,204,0,0.5); }
+      to   { box-shadow: 0 0 20px rgba(255,204,0,0.9); }
+    }
+
   </style>
 </head>
 <body>
-
-  <div class="container" style="text-align: center; margin-bottom: 30px;">
+  
+  
+  <!-- Fixed Header, always fully visible -->
+  <header class="header">
+    <div class="logo glitch">🎮 Gameplay Loop Team 1</div>
+    <nav class="nav-links">
+      <a href="https://github.com/southern-cross-ai/Boys-Next-Door" target="_blank">Visit GitHub</a>
+      <a href="https://trello.com/b/1onf0L18" target="_blank">Trello Board</a>
+      <a href="https://discord.gg/78dh2JnTWq" target="_blank">Join Discord</a>
+      <a href="https://drive.google.com/file/d/1Z0Th0IE40zsJnf6UYpFXBBvlMKVQD8a_/view" target="_blank">Gameplay Demo</a>
+    </nav>
+  </header>
+  
+   <!-- Welcome Section is now pushed below header -->
+  <div class="container"  style="margin-top: 80px;">
     <h2 style="color: #ffcc00; font-size: 24px; margin-bottom: 15px;">🎮 Welcome to The Guild!</h2>
-    <!-- Main Poster Image -->
-    <img src="./PageAssets/pic_01.jpg" alt="Game Poster" style="max-width: 100%; height: auto; border-radius: 15px; box-shadow: 0px 4px 15px rgba(255, 204, 0, 0.6);">
-    <!-- <p style="font-size: 16px; color: #fff; margin-top: 10px;">Explore the epic journey and adventure waiting for you!</p> -->
+    <img src="./PageAssets/pic_01.jpg" alt="Game Poster"
+         style="max-width:100%;height:auto;border-radius:15px;box-shadow:0 0 15px rgba(255,204,0,0.6);">
   </div>
   
   
- <div class="container" style="background: #111; border: 3px dashed #fff; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+ <!-- <div class="container" style="background: #111; border: 3px dashed #fff; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
     <h1 class="glitch">🎮 Gameplay Loop Team 1</h1>
     <p>Building the most epic gameplay loop for The Guild!</p>
     <a class="button" href="https://github.com/southern-cross-ai/Boys-Next-Door" target="_blank">Visit GitHub</a>
     <a class="button" href="https://trello.com/b/1onf0L18" target="_blank">Trello Board</a>
     <a class="button" href="https://discord.gg/78dh2JnTWq" target="_blank">Join Discord</a>
-  </div>
-
-  <!-- <div class="container">
-    <h3>🎬 Showcase Video</h3>
-    <p>Check out our latest gameplay or feature preview:</p>
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
+    <a class="button" href="https://drive.google.com/file/d/1Z0Th0IE40zsJnf6UYpFXBBvlMKVQD8a_/view" target="_blank">Gameplay Demo</a>
   </div> -->
 
+   <div class="container" style="background: #111; border: 3px dashed #fff; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+ 
+    <h3>🎬 Showcase Video</h3>
+    <p>Check out our latest gameplay</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe
+        src="https://www.youtube.com/embed/nEjOplIFEgI"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="position:absolute;top:0;left:0;width:100%;height:100%;">
+      </iframe>
+    </div>
+  </div>
+
+  
   <div class="container">
     <h3>🌟 Feature Highlights</h3>
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
@@ -207,6 +285,26 @@
       </ul>
     </div>
 
+    <div class="sprint-block">
+      <h3>🔧 Phase 4:  Tutorial & Debugging</h3>
+      <ul>
+        <li>📝 Tutorial system guiding the player through every step</li>
+        <li>🌲 Guild ground now randomly populated with grass, trees, and stones</li>
+        <li>⚔️ Characters equipped with visible weapons for better immersion</li>
+        <li>🖱️ Mouse click fully enabled on the combat UI</li>
+        <li>✨ Buffs & debuffs now display particle effects and overhead icons</li>
+      </ul>
+      <img src="./PageAssets/phase_4_gif_4.gif" alt="Tutorial step">
+      <img src="./PageAssets/phase_4_gif_5.gif" alt="Tutorial highlight">
+      <img src="./PageAssets/phase_4_gif_2.gif" alt="Tutorial arrows">
+      <img src="./PageAssets/phase_4_gif_6.gif" alt="Random ground elements">
+      <img src="./PageAssets/phase_4_gif_1.gif" alt="Characters with weapons">
+      <img src="./PageAssets/phase_4_gif_3.gif" alt="Buff particle effect">
+      <img src="./PageAssets/phase_4_gif_7.gif" alt="Debuff particle effect">
+    </div>
+
+
+
   </div>
 
   <div class="container">
@@ -218,13 +316,13 @@
  
     <h3>👥 Team Responsibilities & Members</h3>
     <div class="team-grid">
-      <div class="team-member"><img src="./PageAssets/Xing.jpg" alt="Xing Chen"><p><strong>Xing Chen</strong><br>PM, Skills, Animation</p></div>
-      <div class="team-member"><img src="./PageAssets/Hongjun.jpg" alt="Hongjun Xu"><p><strong>Hongjun Xu</strong><br>MP, Combat Module, Migration</p></div>
-      <div class="team-member"><img src="./PageAssets/Baizhen.jpg" alt="Baizhen Lin"><p><strong>Baizhen Lin</strong><br>Combat Module, Migration</p></div>
-      <div class="team-member"><img src="./PageAssets/Yingxuan.jpg" alt="Yingxuan Tang"><p><strong>Yingxuan Tang</strong><br>Near-Death, UI</p></div>
-      <div class="team-member"><img src="./PageAssets/Jin.jpg" alt="Jin Zhang"><p><strong>Jin Zhang</strong><br>Animation, Scene Design</p></div>
-      <div class="team-member"><img src="./PageAssets/Shuqi.jpg" alt="Shuqi Zhuang"><p><strong>Shuqi Zhuang</strong><br>Buffs & Debuffs, Landing Page</p></div>
-      <div class="team-member"><img src="./PageAssets/Qi.jpg" alt="Qi Ji"><p><strong>Qi Ji</strong><br>Stress System, Camera, Randomness</p></div>
+      <div class="team-member"><img src="./PageAssets/Xing.jpg" alt="Xing Chen"><p><strong>Xing Chen</strong><br>PM, Skills, Animation, Debug, Tutorial</p></div>
+      <div class="team-member"><img src="./PageAssets/Hongjun.jpg" alt="Hongjun Xu"><p><strong>Hongjun Xu</strong><br>MP, Combat Module, Migration, Debug, Tutorial</p></div>
+      <div class="team-member"><img src="./PageAssets/Baizhen.jpg" alt="Baizhen Lin"><p><strong>Baizhen Lin</strong><br>Combat Module, Migration, Debug</p></div>
+      <div class="team-member"><img src="./PageAssets/Yingxuan.jpg" alt="Yingxuan Tang"><p><strong>Yingxuan Tang</strong><br>Near-Death, Video&Poster, Tutorial</p></div>
+      <div class="team-member"><img src="./PageAssets/Jin.jpg" alt="Jin Zhang"><p><strong>Jin Zhang</strong><br>Animation, Scene Design, Video&Poster</p></div>
+      <div class="team-member"><img src="./PageAssets/Shuqi.jpg" alt="Shuqi Zhuang"><p><strong>Shuqi Zhuang</strong><br>Buffs & Debuffs, Landing Page, NPC Anim</p></div>
+      <div class="team-member"><img src="./PageAssets/Qi.jpg" alt="Qi Ji"><p><strong>Qi Ji</strong><br>Stress System, Camera, Randomness, UI design</p></div>
     </div>
   </div>
 
