@@ -1,10 +1,45 @@
-## 🎮 Welcome to **Gameplay Loop Team 1**! 🚀  
-![The Guild - Base Building](https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif)
+# The Guild - A UE5 Game Project
 
-Hey there, fellow game enthusiasts! Welcome to the **Gameplay Loop Team 1** repo, where we turn caffeine, code, and chaos into an epic gaming experience. We’re on a mission to craft the ultimate **gameplay experience**—bringing together **base building, dungeon crawling, exploration, and (hopefully) some balanced combat!**  
+🎮 **The Guild** is a medieval fantasy game developed by a team of ANU students using **Unreal Engine 5**. Featuring core gameplay elements such as **base building, exploration, and combat**, players can build and expand their own guild, recruit heroes, and overcome various challenges.
 
-<img src="./PageAssets/pic_01.jpg" alt="Game Dev Banner" width="500">
+After **two semesters of development**, and thanks to the hard work of everyone involved, the game is finally complete!
+
 ---
+
+## 📽️ Demo Video
+
+Curious about the gameplay? Watch our demo video here:
+
+👉 [Watch the demo video](https://drive.google.com/your-demo-video-link)
+
+---
+
+## 💾 Download & Play (Windows Only)
+
+Try out the game by downloading the Windows build here:
+
+👉 [Download Playtest Build](https://drive.google.com/file/d/1Z0Th0IE40zsJnf6UYpFXBBvlMKVQD8a_/view?usp=sharing)
+
+> ⚠️ Currently available for **Windows only**.
+
+---
+
+## 🤝 Collaboration Repository
+
+We worked together with another group to co-develop part of the project. You can check out the shared module here:
+
+👉 [Collaboration GitHub Repository](https://github.com/southern-cross-ai/Deep_Dark_Dungeon_Forked/tree/main)
+
+---
+
+## 📚 Want to know more about our development journey?
+
+We documented our inspirations, challenges, and milestones along the way. Read more on our project page:
+
+👉 [Explore our development story](https://southerncross.ai/Boys-Next-Door/)
+
+---
+
 
 ## 🏆 Meet the Team  
 
@@ -41,11 +76,6 @@ We’re combining our **game design expertise** with **pure passion for gaming**
 
 ---
 
-## 🤝 Join the Fun!  
+## 🙌 Thank You for Your Support!
 
-Want to follow our journey? Feel free to:  
-⭐ **Star this repo** for updates!  
-🐛 **Report bugs** (but don’t judge us too hard, we’re trying!)  
-💬 **Give feedback** – We love constructive criticism! Contact us: u7725171@anu.edu.au
-
-Stay tuned for **dev logs, GIFs, and inevitable feature creep!** 🚀
+If you enjoyed our game, please consider giving us a ⭐ on GitHub or leaving feedback. We'd love to hear from you!
