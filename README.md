@@ -1,5 +1,7 @@
 # The Guild - A UE5 Game Project
 
+![Poster](./PageAssets/The_Guild_Poster.png)
+
 🎮 **The Guild** is a medieval fantasy game developed by a team of ANU students using **Unreal Engine 5**. Featuring core gameplay elements such as **base building, exploration, and combat**, players can build and expand their own guild, recruit heroes, and overcome various challenges.
 
 After **two semesters of development**, and thanks to the hard work of everyone involved, the game is finally complete!
@@ -10,7 +12,7 @@ After **two semesters of development**, and thanks to the hard work of everyone 
 
 Curious about the gameplay? Watch our demo video here:
 
-👉 [Watch the demo video](https://drive.google.com/your-demo-video-link)
+👉 [Watch the demo video](https://youtu.be/nEjOplIFEgI)
 
 ---
 
@@ -28,7 +30,7 @@ Try out the game by downloading the Windows build here:
 
 We worked together with another group to co-develop part of the project. You can check out the shared module here:
 
-👉 [Collaboration GitHub Repository](https://github.com/southern-cross-ai/Deep_Dark_Dungeon_Forked/tree/main)
+👉 [Collaboration GitHub Repository](https://github.com/southern-cross-ai/Deep_Dark_Dungeon)
 
 ---
 
